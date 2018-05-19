@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="gameApp">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="AddGame.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-
+<body ng-controller="gameCtrl">
+<ul>
+    <li ng-repeat="game in games">{{game}}</li>
+</ul>
+<form ng-submit="addGame()">
+    <input type="submit" value="Save to List" ng-click="gameName = 'God of War'" ng-model="gameName" >
+    <input type="submit" value="Save to List" ng-click="gameName = 'Infamous: Second Son'" ng-model="gameName" >
+</form>
 
 </body>
 </html>
