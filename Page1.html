@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Makes the page being viewable on all devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+
+<!-- 
+The container element is used to show a pointer symbol
+when the user moves the mouse over the divs (bars).
+When it is clicked on, it will execute a JavaScript function
+that adds a new class name to it, which will change the styles
+of each horizontal bar: the first and the last bar is transformed
+and rotated to the letter "x".
+The bar in the middle fades out and becomes invisible
+-->
+
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
+
+
+</body>
+</html>
+
