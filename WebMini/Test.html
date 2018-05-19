@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body ng-controller="gameCtrl"> //Needs controller for Angular functionality in Script AddGame.js
+<body ng-controller="gameCtrl"> <!--Needs controller for Angular functionality in Script AddGame.js-->
 <ul>
-    //Creates list of elements, updates automatically when the list from the AddGame.js is changed.
+    <!--Creates list of elements, updates automatically when the list from the AddGame.js is changed.-->
     <li ng-repeat="game in games">{{game}}</li>
 </ul>
-<form ng-submit="addGame()"> //Uses funtion addGame() from AddGame.js
+<form ng-submit="addGame()"> <!--Uses funtion addGame() from AddGame.js-->
     <input type="submit" value="Save to List" ng-click="gameName = 'God of War'" ng-model="gameName" >
     <input type="submit" value="Save to List" ng-click="gameName = 'Infamous: Second Son'" ng-model="gameName" >
 </form>
