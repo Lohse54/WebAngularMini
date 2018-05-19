@@ -19,19 +19,28 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 
-<body>
+<body ng-controller="gameCtrl"> <!--Needs controller for Angular functionality in Script AddGame.js-->
+
+
+<div class="sidenav">
+    <a href="#gamesChosen">Chosen Games</a>
+    <!--Creates list of elements, updates automatically when the list from the AddGame.js is changed.-->
+    <a ng-repeat="game in games">{{game}}</a>
+
+</div>
 
 <!--The sidebar menu, with the buger icon, unanimated-->
 <div id="sidebar">
+    <!-- The burger menu logo, hard coded-->
     <div class="toggle-btn" onclick="toggleSidebar()">
         <span></span>
         <span></span>
         <span></span>
-    </div> <!-- The burger menu logo, hard coded-->
+    </div>
 
     <ul>
-        <li>My account</li>
-        <li>Saved Games</li>
+        <li>My Account</li>
+        <li>Settings (in the works)</li>
         <li>Log out</li>
     </ul>
 
@@ -39,7 +48,13 @@
 
 <main>
 
+    <div class="center">
 
+    <form ng-submit="addGame()"> <!--Uses funtion addGame() from AddGame.js-->
+        <input type="submit" value="Save to List" ng-click="gameName = 'God of War'" ng-model="gameName" >
+        <input type="submit" value="Save to List" ng-click="gameName = 'Infamous: Second Son'" ng-model="gameName" >
+    </form>
+    </div>
 
 
 

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c298859-c7ea-4e3b-af31-acc25daaa583" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/WebMini/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebMini/Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebMini/Page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebMini/Page1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebMini/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebMini/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebMini/TildeJava.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebMini/TildeJava.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,29 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Page1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Page1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebMini/Page1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddGame.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebMini/AddGame.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebMini/Test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -46,8 +30,8 @@
       <file leaf-file-name="Style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebMini/Style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state relative-caret-position="105">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -55,8 +39,8 @@
       <file leaf-file-name="TildeJava.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebMini/TildeJava.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -80,11 +64,11 @@
       <list>
         <option value="$PROJECT_DIR$/Style.css" />
         <option value="$PROJECT_DIR$/Page1.html" />
-        <option value="$PROJECT_DIR$/WebMini/Style.css" />
-        <option value="$PROJECT_DIR$/WebMini/TildeJava.js" />
-        <option value="$PROJECT_DIR$/WebMini/Page1.html" />
         <option value="$PROJECT_DIR$/WebMini/AddGame.js" />
         <option value="$PROJECT_DIR$/WebMini/Test.html" />
+        <option value="$PROJECT_DIR$/WebMini/TildeJava.js" />
+        <option value="$PROJECT_DIR$/WebMini/Page1.html" />
+        <option value="$PROJECT_DIR$/WebMini/Style.css" />
       </list>
     </option>
   </component>
@@ -99,10 +83,10 @@
       <path value="$PROJECT_DIR$/WebMini/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
-    <option name="y" value="23" />
-    <option name="width" value="1302" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="138" />
+    <option name="y" value="22" />
+    <option name="width" value="1049" />
     <option name="height" value="687" />
   </component>
   <component name="ProjectView">
@@ -168,18 +152,18 @@
       <option name="presentableId" value="Default" />
       <updated>1526126810203</updated>
       <workItem from="1526126811530" duration="1918000" />
-      <workItem from="1526730668861" duration="8011000" />
+      <workItem from="1526730668861" duration="13954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9929000" />
+    <option name="totallyTimeSpent" value="15872000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="23" width="1302" height="687" extended-state="0" />
+    <frame x="-18" y="27" width="1049" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26958525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33460438" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32998326" />
@@ -212,27 +196,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebMini/TildeJava.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebMini/Style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebMini/.travis.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebMini/Page1.html">
+    <entry file="file://$PROJECT_DIR$/WebMini/Test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -243,10 +213,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebMini/Test.html">
+    <entry file="file://$PROJECT_DIR$/WebMini/TildeJava.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebMini/Style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebMini/Page1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
         </state>
       </provider>
     </entry>

@@ -1,14 +1,48 @@
 /*To bar menu*/
 
-* {
-    margin: 0;
-    padding: 0;
 
+* { /* For all */
     font-family: sans-serif;
-
 }
 
-#sidebar { /*The sidebar*/
+/* The fixed menu */
+.sidenav {
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:teal;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: azure;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: darkslategray;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+#sidebar { /*The Animated sidebar*/
 
     position: fixed;
     width: 200px;
@@ -44,6 +78,34 @@
     margin: 5px 0;
 
 }
+
+
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: none;
+    padding: 16px 32px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: azure;
+    background-color: teal;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+}
+
+input[type=submit], input[type=button] {
+    background-color: teal;
+    color: azure;
+}
+
+
+
+
+
 
 
 
