@@ -24,13 +24,14 @@
 </div>
 
 <!-- Takes input -->
-Search: <input ng-model="query" type="text"/>
+Search: <input ng-model="search.game" type="text"/>
 
 <!-- Defines rows and collumns for images -->
 <div class="row">
     <!-- Shows images for all items in the array. Filters items shown based on what's written in the search bar-->
-    <div class="column" ng-repeat="picture in gameList | filter:query">
-        <img ng-src="{{picture.img}}" alt="{{picture.game}}" style="width:100%" onclick="showImg(this);">
+    <div class="column" ng-repeat="picture in gameList | filter:search">
+        <img ng-src="{{picture.img}}" alt="{{picture.gameDescription}}" style="width:100%" onclick="showImg(this);">
+        <button type="submit" value="Save to List" ng-click="addGame(picture.game)">Save to List</button>
     </div>
 </div>
 
@@ -38,7 +39,7 @@ Search: <input ng-model="query" type="text"/>
 <div class="container">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <img id="expandedImg" style="width:100%">
-    <div id="imgtext"></div>
+    <div class="box", id="imgtext"></div>
 </div>
 
 
