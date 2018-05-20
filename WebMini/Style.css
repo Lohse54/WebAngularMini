@@ -8,14 +8,17 @@
 /* The fixed menu */
 .sidenav {
     height: 100%;
-    width: 170px;
+    width: 160px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
+    text-align: center;
     background-color:teal;
     overflow-x: hidden;
     padding-top: 20px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 .sidenav a {
@@ -98,9 +101,23 @@
 }
 
 input[type=submit], input[type=button] {
-    background-color: teal;
+    width: auto;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    text-decoration: azure;
+    display: inline-block;
+    padding: 10px;
+    background-color: darkslategray;
     color: azure;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
+
+
+
+
 
 
 
