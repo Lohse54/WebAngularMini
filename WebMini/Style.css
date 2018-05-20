@@ -2,48 +2,44 @@
 
 
 * { /* For all */
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-/* The fixed menu */
-.sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    text-align: center;
-    background-color:teal;
-    overflow-x: hidden;
-    padding-top: 20px;
-    border-radius: 8px;
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #D4F7EC;
+}
+
+
+/*Header for the animated menu*/
+h1 {
     font-weight: bold;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
     font-size: 20px;
-    color: azure;
-    display: block;
+
 }
 
-.sidenav a:hover {
-    color: darkslategray;
+/*The header on the page*/
+h2 {
+    border: none;
+    padding: 25px 200px;
+    text-align: center;
+    text-decoration: azure;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: teal;
+    color: white;
+    font-size: 22px;
+    box-shadow: 0 8px 16px 0 rgba(28,206,209,0.2), 0 6px 20px 0 rgba(0,139,139,0.19);
+
 }
 
-.main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
+/*Descriptive text below header*/
+p {
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 
+
+}
 
 #sidebar { /*The Animated sidebar*/
 
@@ -58,10 +54,12 @@
     left: 0;
 }
 
+
 #sidebar ul li { /* Menu buttons design */
     color: aliceblue;
     list-style: none;
     padding: 15px 10px;
+    mso-border-shadow: yes;
     border-bottom: 1px solid darkslategray;
 
 }
@@ -82,7 +80,7 @@
 
 }
 
-
+/*The heading*/
 
 .center {
     margin: auto;
@@ -96,11 +94,109 @@
     color: azure;
     background-color: teal;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 8px 16px 0 rgba(28,206,209,0.2), 0 6px 20px 0 rgba(0,139,139,0.19);
 
 }
 
-input[type=submit], input[type=button] {
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 1;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.column img:hover {
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container, style of the images */
+.container {
+    position: relative;
+    display: none;
+}
+
+.row {
+
+    /* The rows of images*/
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    padding: 15px;
+    text-align: center;
+    display:inline-block;
+    top: 600px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+
+.searchbar {
+    position: relative;
+    left: 500px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: azure;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: teal;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(28,206,209,0.2), 0 6px 20px 0 rgba(0,139,139,0.19);
+
+}
+
+/*The information boxes by the games */
+.box {
+    overflow: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    text-decoration: azure;
+    padding: 10px;
+    background-color: darkslategray;
+    color: azure;
+    font-size: 10px;
+    box-shadow: 0 8px 16px 0 rgba(28,206,209,0.10), 0 6px 20px 0 rgba(0,139,139,0.09);
+}
+
+.addButton {
+
     width: auto;
     border-radius: 8px;
     border: none;
@@ -108,12 +204,14 @@ input[type=submit], input[type=button] {
     text-decoration: azure;
     display: inline-block;
     padding: 10px;
-    background-color: darkslategray;
+    background-color: teal;
     color: azure;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 12px;
     cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(28,206,209,0.10), 0 6px 20px 0 rgba(0,139,139,0.09)
+
 }
+
 
 
 

@@ -15,23 +15,24 @@
     <!-- Makes the page being viewable on all devices -->
     <meta charset="UTF-8">
     <meta name="viewport" content=" width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>GameLists.org</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body ng-controller="gameCtrl"> <!--Needs controller for Angular functionality in Script AddGame.js-->
 
 
-<div class="sidenav">
-    <a href="#gamesChosen">Chosen Games</a>
-    <!--Creates list of elements, updates automatically when the list from the AddGame.js is changed.-->
-    <a ng-repeat="game in games">{{game}}</a>
+<!--<div class="sidenav"> -->
 
-</div>
+<!-- <a href="#gamesChosen">Chosen Games</a> -->
+    <!--Creates list of elements, updates automatically when the list from the AddGame.js is changed.-->
+<!--<a ng-repeat="game in games">{{game}}</a> -->
+
+<!--</div> -->
 
 <!--The sidebar menu, with the buger icon, unanimated-->
 <div id="sidebar">
-    <!-- The burger menu logo, hard coded-->
+    <!-- The burger menu logo, hard coded -->
     <div class="toggle-btn" onclick="toggleSidebar()">
         <span></span>
         <span></span>
@@ -39,21 +40,44 @@
     </div>
 
     <ul>
-        <li>My Account</li>
-        <li>Settings (in the works)</li>
-        <li>Log out</li>
+        <li href="#gamesChosen"><h1>Games added to my account</h1></li>
+        <!--Creates list of elements, updates automatically when the list from the AddGame.js is changed.-->
+        <li ng-repeat="game in games">{{game}}</li>
     </ul>
 
 </div>
 
 <main>
 
-    <div class="center">
 
-    <form ng-submit="addGame()"> <!--Uses funtion addGame() from AddGame.js-->
-        <input type="submit" value="Save to List" ng-click="gameName = 'God of War'" ng-model="gameName" >
-        <input type="submit" value="Save to List" ng-click="gameName = 'Infamous: Second Son'" ng-model="gameName" >
-    </form>
+    <!-- Headers before the games -->
+    <div style="text-align:center">
+        <h2>Tabbed Image Gallery</h2>   <!-- Change font + style -->
+        <p>Click on the images below:</p> <!-- Change font + style -->
+    </div>
+
+
+    <!-- Search bar -->
+    <div class="searchbar">
+    <!-- Takes input for search bar -->
+    Search: <input ng-model="search.game" type="text"/>
+    </div>
+
+
+    <!-- Defines rows and collumns for images -->
+    <div class="row">
+        <!-- Shows images for all items in the array. Filters items shown based on what's written in the search bar-->
+        <div class="column" ng-repeat="picture in gameList | filter:search">
+            <img ng-src="{{picture.img}}" alt="{{picture.gameDescription}}" style="width:100%" onclick="showImg(this);">
+            <button class="addButton" type="submit" value="Save to List" ng-click="addGame(picture.game)">Save to List</button>
+        </div>
+    </div>
+
+    <!-- Shows image, imagetext at the bottom of the screen and shows the closebutton on top of the image -->
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div> <!-- box class is infobox -->
     </div>
 
 

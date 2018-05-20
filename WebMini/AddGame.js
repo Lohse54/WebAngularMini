@@ -5,10 +5,10 @@ gameApp.controller('gameCtrl', function($scope){
 
     //Array that contains all the games shown on the page.
     $scope.gameList = [
-        { game: "God of War", img: "GOW.jpg", gameDescription: "Something"},
-        { game: "Battlefield 4", img: "BFF4.jpg", gameDescription: "Something1"},
-        { game: "Infamous: Second Son", img: "ISS.jpg", gameDescription: "Something2"},
-        { game: "Mass Effect 3", img: "ME3.png", gameDescription: "Something3"}
+        { game: "God of War", img: "GOW.jpg", gameDescription: "Game of the year BOI!"},
+        { game: "Battlefield 4", img: "BFF4.jpg", gameDescription: "Launch was bad.. Like always.. Now its pretty good"},
+        { game: "Infamous: Second Son", img: "ISS.jpg", gameDescription: "Great Game, despite what everyone says"},
+        { game: "Mass Effect 3", img: "ME3.png", gameDescription: "Best game she ever played 10/10"}
     ];
 
     $scope.addGame = function (gameName) {
