@@ -3,11 +3,12 @@
 
 * { /* For all */
     box-sizing: border-box;
+    font-family: Arial;
 }
 
 body {
     margin: 0;
-    font-family: Arial;
+
     background-color: #D4F7EC;
 }
 
@@ -34,12 +35,6 @@ h2 {
 
 }
 
-/*Descriptive text below header*/
-p {
-
-
-
-}
 
 #sidebar { /*The Animated sidebar*/
 
@@ -165,7 +160,7 @@ p {
 
 .searchbar {
     position: relative;
-    left: 500px;
+    left: 400px;
     border: none;
     padding: 10px;
     text-align: center;
